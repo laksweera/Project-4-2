@@ -1,0 +1,148 @@
+$primary: #467AA9;
+$secondary:#EDF1F4;
+$circle:#6c757d;
+
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,  
+    "circle": $circle,  
+);
+
+
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
+
+body{
+    font-family: 'Geologica', sans-serif;
+  
+}
+
+
+
+
+////// navbar /////
+.nav-logo{
+    width: 97px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+
+  a.nav-link {
+    color: #000;
+}
+
+a.nav-link:hover{
+    color: $primary;
+}
+
+
+a.nav-link.active.me-2 {
+    color: $primary;
+}
+
+
+// Section 2 web desing many ////
+.web-desing-image {
+    background-image: url(../img/Asset-11-4x.png);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.web-desing-text {
+    max-width: 410px;  
+}
+
+
+
+
+/////// owl carousel//////////
+
+.owl-carousel {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+// .owl-carousel .item {
+// 	font-size: 30px;
+// 	text-align: center;
+// 	padding: 40px 20px;
+// 	line-height: 2;
+// 	font-weight: 700;
+// 	background-color: #eee;
+// }
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+	background-color: #ccc;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translatey(-50%);
+}
+
+.owl-nav button span {
+	font-size: 30px;
+	height: 100%;
+	display: block;
+	width: 100%;
+}
+.owl-carousel .owl-nav button.owl-prev {
+	left: -10%;
+}
+.owl-carousel .owl-nav button.owl-next {
+	right: -10%
+}
+.owl-carousel .owl-nav {
+	margin: 0;
+}
+.btn-wrap {
+	text-align: center;
+	width: 100%;
+}
+
+.owl-theme .owl-nav .disabled,
+button.disabled {
+	opacity: 0.6;
+}
+
+
+
+// Section 7 Lorem Ipsum available
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 3px;
+    text-indent: -999px;
+	margin-top: -46px;
+    cursor: pointer;
+    background-color: $circle;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+  }
+  button.active {
+    opacity: 1!important;
+  }
